@@ -30,4 +30,10 @@ public class CalculatorLogger implements Calculable {
         return calculator.getResult();
     }
 
+    @Override
+    public Calculable division(int arg) {
+        logger.log(String.format("Вычисляется деление чисел: %d и %d", calculator.getResult(), arg));
+        return calculator.division(arg);
+    }
+
 }

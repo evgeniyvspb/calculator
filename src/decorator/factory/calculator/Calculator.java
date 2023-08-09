@@ -24,4 +24,10 @@ public final class Calculator implements Calculable {
     public int getResult() {
         return primaryArg;
     }
+
+    @Override
+    public Calculable division(int arg) {
+        primaryArg /= arg;
+        return this;
+    }
 }
